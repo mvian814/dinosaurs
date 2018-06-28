@@ -23,6 +23,15 @@ describe Weight do
     expect(results.imperial_calculation).to eq(2721.6)
   end
 
+  it 'expects #weight_check to return true' do
+    results = Weight.new("6000","2721.6")
+    expect(results.weight_check).to eq(true)
+  end
+
+  it 'expects #weight_check to return false' do
+    results = Weight.new("6000","2722")
+    expect(results.weight_check).to eq(false)
+  end
 
 
 

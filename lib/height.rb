@@ -17,8 +17,11 @@ class Height
   end
 
   def height_check
-  puts "height check test:#{@imperial} #{imperial_calculation} == #{@metric}"
-    if imperial_calculation == @metric
+  # puts "height check test: imperial #{@imperial} metric #{@metric} #{imperial_calculation} == #{@metric}"
+  # puts "this is stuff with out the @: imperial #{imperial}, metric #{metric}, imperial calcuation #{imperial_calculation}"
+  # puts "inspecting imperial_calculation: #{imperial_calculation.inspect}"
+  # puts "this is the dot class: imperial #{imperial_calculation.class} metric #{metric.class}"
+    if imperial_calculation == @metric.to_f
       return true
     end
     return false

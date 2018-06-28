@@ -18,8 +18,8 @@ describe Height do
     expect(results.height_check).to eq(true)
   end
 
-  xit 'expects #height_check to return false' do
-    results = Sauropod.new("jeff",["beefy","lizard"],["19","0"],["19","5.8"],["19","5.8"])
+  it 'expects #height_check to return false' do
+    results = Height.new("19","5.9")
     expect(results.height_check).to eq(false)
   end
 

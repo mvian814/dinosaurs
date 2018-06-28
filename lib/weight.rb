@@ -19,7 +19,11 @@ class Weight
   end
 
   def weight_check
-
+    if imperial_calculation == @metric.tap { |s| s.delete!(',') }.to_f
+      return true
+    else
+      false
+    end
   end
 
 end

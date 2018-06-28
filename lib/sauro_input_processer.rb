@@ -22,11 +22,11 @@ height = Height.new("19","5.8")
 puts "this is imperial calc test: #{height.imperial_calculation}"
 puts "this is metric test: #{height.metric}"
 puts "this is height check test: #{height.height_check}"
-
+puts "this in inspecting height check: #{height.height_check.inspect}"
 sauropods.sort_by!{|sauropod| sauropod.nickname}
 # print sauropods
 
 
 sauropods.each do |sauropod|
-  puts "#{sauropod.nickname.join(' ')} (#{sauropod.scientific_name}), height: ,length: ,weight:"
+  # puts "#{sauropod.nickname.join(' ')} (#{sauropod.scientific_name}), height: ,length: ,weight:"
 end

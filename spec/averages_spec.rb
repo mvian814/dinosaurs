@@ -3,9 +3,9 @@ require 'spec_helper'
 describe Averages do
 
   it 'expects #average_height' do
-    sauropod1 = Sauropod.new("jeff",["",""],["","1"],["","2"],["","3"])
-    sauropod2 = Sauropod.new("jeff2",["",""],["","3"],["","4"],["","5"])
-    results = sauropods.average_height
+    average1 = Averages.new(["","1"])
+    average2 = Averages.new(["","3"])
+    results = averages.average_height
     expect(results).to eq(2)
   end
 

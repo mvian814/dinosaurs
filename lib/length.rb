@@ -17,7 +17,11 @@ class Length
   end
 
   def length_check
-
+    if imperial_calculation == @metric.to_f
+      return true
+    else
+      return false
+    end
   end
 
 end
