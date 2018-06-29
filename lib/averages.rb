@@ -2,7 +2,13 @@ class Averages
 
 # need call the metric amount (height, length, weight) for each sauropod
 # find the sum and devide by number of sauropods
-
+  def initialize(height =[], length =[], weight=[])
+# maybe have to parse it?
+# takes the metric of each category of each line
+  @height = height
+  @length = length
+  @weight = weight
+  end
 
   def average_height
     sum = 0

@@ -5,7 +5,7 @@ require_relative '../lib/sauropods'
 require_relative '../lib/weight'
 
 sauropods = []
-
+averages = []
 
 ARGV.each do |file|
   File.open(file, 'r').each_line do |line|
@@ -14,6 +14,8 @@ ARGV.each do |file|
     new_sauropod = Sauropod.new(words[0],words[1..2],words[3..4],words[5..6],words[7..8])
     sauropods << new_sauropod
     # print sauropods
+    new_average = Averages.new(words[4],words[6],words[8])
+    averages << new_average
   end
 end
 
